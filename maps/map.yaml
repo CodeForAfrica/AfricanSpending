@@ -1,0 +1,5 @@
+layers:
+-  src: shp/africa.shp
+bounds:
+   mode: bbox
+   data: [-22,-39,56,42]

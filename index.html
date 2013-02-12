@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>African Spending | Coming Soon</title>
+        <title>AfricanSpending by Open Institute | Coming Soon</title>
         <meta name="description" content="Open Duka">
         <meta name="author" content="Open Institute">
         <meta name="viewport" content="width=device-width">
@@ -21,65 +21,116 @@
         <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
         <![endif]-->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery-1.9.0.min.js"></script>
+        <script src="js/vendor/raphael.js"></script>
+        <script src="js/kartograph.js"></script>
+        <script src="js/vendor/jquery.qtip.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/jquery.qtip.css">
         
         <style>
-        	html, body {
-        		background: #ffffff; /* Old browsers */
-        		background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #eeeeee 100%); /* FF3.6+ */
-        		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
-        		background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
-        		background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#eeeeee 100%); /* Opera 12+ */
-        		background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#eeeeee 100%); /* IE10+ */
-        		background: radial-gradient(ellipse at center,  #ffffff 0%,#eeeeee 100%); /* W3C */
-        		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        		height: 100%;
+        	body{
+        		text-align: center;
         	}
         </style>
         
     </head>
-    <body>
+    <body >
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+        
+        <!--<img src="img/bg-image.png" alt="" class="full-screen-background-image" />-->
 
         <!-- Add your site or application content here -->
-        <table align="center" style="width: 100%; height: 100%; text-align: center;">
-        	<tr><td valign="middle">
-        		<p style="margin-bottom: 25px;"><i class="icon-cogs icon-4x icon-border"></i></p>
-        		<h1 style="font-size: 50px;">
-        			<span style="font-weight: normal;">African </span>Spending
-        		</h1>
-        		<br />
-        		
-        		<div style="max-width:400px; margin: 0 auto;">
-        			<p class="lead">We are working hard on awesome stuff. Sign up for upcoming announcements.</p>
-        		</div>
-        		
-        		<!-- Begin MailChimp Signup Form -->
-        		<div id="mc_embed_signup">
-        			<form action="http://openinstitute.us6.list-manage1.com/subscribe/post?u=65e5825507b3cec760f272e79&amp;id=b7fae70cb2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+        
+        <div class="container" style="padding-top: 30px;">
+        	<div class="well">
+        		<table align="center" style="width: 100%;" class="hidden-phone"><tr>
+        			<td valign="middle">
+        				<h1 style="font-size: 300%;">
+        					<span style="font-weight: normal;">African</span>Spending
+        				</h1>
+        			</td>
+        			<td valign="middle">
+        				<div style="max-width:400px; margin: 0 auto;">
+        					<p class="lead">We are working hard on awesome stuff. Sign up for upcoming announcements.</p>
+        				</div>
         				
-        				<div class="mc-field-group">
-        					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-        					<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Subscribe</button>
+        				<!-- Begin MailChimp Signup Form -->
+        				<div id="mc_embed_signup">
+        					<form style="margin: 0;" action="http://openinstitute.us6.list-manage1.com/subscribe/post?u=65e5825507b3cec760f272e79&amp;id=b7fae70cb2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+        						
+        						<div class="mc-field-group">
+        							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+        							<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Subscribe</button>
+        						</div>
+        						<div id="mce-responses" class="clear">
+        							<div class="response" id="mce-error-response" style="display:none"></div>
+        							<div class="response" id="mce-success-response" style="display:none"></div>
+        						</div>
+        					</form>
         				</div>
-        				<div id="mce-responses" class="clear">
-        					<div class="response" id="mce-error-response" style="display:none"></div>
-        					<div class="response" id="mce-success-response" style="display:none"></div>
-        				</div>
-        			</form>
+        				<!--End mc_embed_signup-->
+        				
+        			</td>
+        		</tr></table>
+        		
+        		<div class="visible-phone">
+        			<h1 style="font-size: 300%;">
+        				<span style="font-weight: normal;">African</span>Spending
+        			</h1>
+        			<div style="max-width:400px; margin: 0 auto;">
+        				<p class="lead">We are working hard on awesome stuff. Sign up for upcoming announcements.</p>
+        			</div>
+        			
+        			<!-- Begin MailChimp Signup Form -->
+        			<div id="mc_embed_signup">
+        				<form action="http://openinstitute.us6.list-manage1.com/subscribe/post?u=65e5825507b3cec760f272e79&amp;id=b7fae70cb2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+        					
+        					<div class="mc-field-group">
+        						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+        						<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Subscribe</button>
+        					</div>
+        					<div id="mce-responses" class="clear">
+        						<div class="response" id="mce-error-response" style="display:none"></div>
+        						<div class="response" id="mce-success-response" style="display:none"></div>
+        					</div>
+        				</form>
+        			</div>
+        			<!--End mc_embed_signup-->
         		</div>
         		
-        		<!--End mc_embed_signup-->
+        		<hr />
         		
-        		<hr style="max-width: 400px; margin: 30px auto 20px;" />
+        		<div>
+        			<div style="max-width: 600px; margin: 0 auto;">
+        				<div id="afroKart"></div>
+        				<script type="text/javascript">
+        					var map = Kartograph.map('#afroKart');
+        					map.loadCSS('css/map_styles.css', function() {
+        						map.loadMap('maps/africa_500.svg', function() {
+        							map.addLayer('countries', {key: 'country'});
+        						});
+        					});
+        				</script>
+        				
+        				<script>
+        					(function ($) {
+        						window.qTipConfig = { style: { name: 'light', tip: true },
+        							position: { corner: { target: 'bottomMiddle', tooltip: 'topMiddle' }}};
+        						$('a[title]').qtip(qTipConfig);
+        					}(jQuery));
+        				</script>
+        			</div>
+        			
+        		</div>
         		
-        		<p style="font-style: italic;">An <a href="http://openinstitute.com">Open Institute</a> project!</p>
-        	</td></tr>
-        </table>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        		<hr />
+        		
+        		<p style="font-style: italic;"><a href="http://openinstitute.com"><img src="img/oi-logo.png" alt="Open Institute" style="height: 80px;" /></a></p>
+        	</div>
+        </div>
+        
         <script src="js/plugins.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>

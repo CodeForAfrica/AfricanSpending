@@ -1,0 +1,22 @@
+[
+    {
+        "label": "North-West Region Investment Budget",
+        "link": "nwregion.html#/~/total",
+        "region": "Nord-Ouest",
+        "type": "regional"
+    },
+    {
+        "label": "Local Council Transparency Index",
+        "link": "bti.html",
+        "region": "Adamaoua",
+        "type": "transparency"
+    },
+    {
+        "name": "tignere",
+        "dataset": "cm-tignere",
+        "label": "Tignere Council Budget",
+        "level": "council",
+        "region": "Adamaoua",
+        "type": "council"
+    }
+]

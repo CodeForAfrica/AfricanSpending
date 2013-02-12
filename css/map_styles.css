@@ -1,0 +1,15 @@
+#map path {
+    stroke: #fff;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+#afroKart{ 
+	z-index: 0 !important;
+	position: absolute !important;
+	top: 0px !important;
+	right: 600px !important;
+}
+	#afrokart svg, #afrokart path{
+		z-index: 0 !important;
+	}

@@ -1,4 +1,2 @@
-African Spending
+OpenDuka
 ========
-
-An easy way to track government spending across Africa.
