@@ -26,8 +26,10 @@
         <script src="js/kartograph.js"></script>
         <script src="js/vendor/jquery.qtip.js"></script>
         <link rel="stylesheet" type="text/css" href="css/jquery.qtip.css">
-        <!--<link rel="stylesheet" type="text/css" href="css/map-style.css">-->
         
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "ur-f6682833-46c-cfd2-1a20-63fa8a04976", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+                
         <style>
         	body{
         		text-align: center;
@@ -44,7 +46,7 @@
 
         <!-- Add your site or application content here -->
         
-        <div class="container" style="padding-top: 30px;">
+        <div class="container" style="padding-top: 30px; max-width: 940px;">
         	<div class="well">
         		<table align="center" style="width: 100%;" class="hidden-phone"><tr>
         			<td valign="middle">
@@ -54,25 +56,28 @@
         				<p>Improving Watchdog Journalism by Mapping the Money</p>
         			</td>
         			<td valign="middle">
-        				<div style="max-width:400px; margin: 0 auto;">
-        					<p class="lead">We are working hard on awesome stuff. Sign up for upcoming announcements.</p>
+        				<div class="alert alert-info" style="display: inline-block; margin: 0 auto; padding: 10px;">
+        					<div style="max-width:400px; margin: 0 auto;">
+        						<p class="lead" style="margin-bottom: 10px;">We are working hard on awesome stuff. Sign up for upcoming announcements.</p>
+        					</div>
+        					
+        					<!-- Begin MailChimp Signup Form -->
+        					<div id="mc_embed_signup">
+        						<form style="margin-bottom: 5px;" action="http://openinstitute.us6.list-manage1.com/subscribe/post?u=65e5825507b3cec760f272e79&amp;id=b7fae70cb2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+        							
+        							<div class="mc-field-group">
+        								<input type="email" value="" name="EMAIL" class="required email input-medium" id="mce-EMAIL" placeholder="Email Address">
+        								<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Subscribe</button>
+        							</div>
+        							<div id="mce-responses" class="clear">
+        								<div class="response" id="mce-error-response" style="display:none"></div>
+        								<div class="response" id="mce-success-response" style="display:none"></div>
+        							</div>
+        						</form>
+        					</div>
+        					<!--End mc_embed_signup-->
+        					<p style="font-style: italic; margin-bottom: 5px; color: #000;"><small>* We don't do spam, we do awesome.</small></p>
         				</div>
-        				
-        				<!-- Begin MailChimp Signup Form -->
-        				<div id="mc_embed_signup">
-        					<form style="margin: 0;" action="http://openinstitute.us6.list-manage1.com/subscribe/post?u=65e5825507b3cec760f272e79&amp;id=b7fae70cb2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
-        						
-        						<div class="mc-field-group">
-        							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-        							<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Subscribe</button>
-        						</div>
-        						<div id="mce-responses" class="clear">
-        							<div class="response" id="mce-error-response" style="display:none"></div>
-        							<div class="response" id="mce-success-response" style="display:none"></div>
-        						</div>
-        					</form>
-        				</div>
-        				<!--End mc_embed_signup-->
         				
         			</td>
         		</tr></table>
@@ -83,67 +88,179 @@
         			</h1>
         			<p>Improving Watchdog Journalism by Mapping the Money</p>
         			<hr />
-        			<div style="max-width:400px; margin: 0 auto;">
-        				<p class="lead">We are working hard on awesome stuff. Sign up for upcoming announcements.</p>
-        			</div>
-        			
-        			<!-- Begin MailChimp Signup Form -->
-        			<div id="mc_embed_signup">
-        				<form action="http://openinstitute.us6.list-manage.com/subscribe/post?u=65e5825507b3cec760f272e79&amp;id=ca87ff77f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
-        					
-        					<div class="mc-field-group">
-        						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-        						<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Subscribe</button>
-        					</div>
-        					<div id="mce-responses" class="clear">
-        						<div class="response" id="mce-error-response" style="display:none"></div>
-        						<div class="response" id="mce-success-response" style="display:none"></div>
-        					</div>
-        				</form>
-        			</div>
-        			<!--End mc_embed_signup-->
-        		</div>
-        		
-        		<hr />
-        		
-        		<div>
-        			<div style="max-width: 600px; margin: 0 auto;">
-        				<div id="afroKart"></div>
-        				<script type="text/javascript">
-        					var map = Kartograph.map('#afroKart');
-        					map.loadMap('maps/africa_500.svg', function() {
-        						map.addLayer('countries', {
-        							key: 'country',
-        							styles: {
-        								fill: '#999',
-        								'stroke-width': 1,
-        								'stroke': '#fff'
-        							},
-        							tooltips: function(d) {
-        								return d.country;
-        							},
-        							click: function(data, path, event) {
-        								
-        							}
-        						});
-        					});
-        					
-        				</script>
+        			<div class="alert alert-info" style="display: inline-block; margin: 0 auto; padding: 10px;">
+        				<div style="max-width:400px; margin: 0 auto;">
+        					<p class="lead" style="margin-bottom: 10px;">We are working hard on awesome stuff. Sign up for upcoming announcements.</p>
+        				</div>
         				
-        				<script>
-        					(function ($) {
-        						window.qTipConfig = { style: { name: 'light', tip: true },
-        							position: { corner: { target: 'bottomMiddle', tooltip: 'topMiddle' }}};
-        						$('a[title]').qtip(qTipConfig);
-        					}(jQuery));
-        				</script>
+        				<!-- Begin MailChimp Signup Form -->
+        				<div id="mc_embed_signup">
+        					<form style="margin-bottom: 5px;" action="http://openinstitute.us6.list-manage1.com/subscribe/post?u=65e5825507b3cec760f272e79&amp;id=b7fae70cb2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+        						
+        						<div class="mc-field-group">
+        							<input type="email" value="" name="EMAIL" class="required email input-medium" id="mce-EMAIL" placeholder="Email Address">
+        							<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Subscribe</button>
+        						</div>
+        						<div id="mce-responses" class="clear">
+        							<div class="response" id="mce-error-response" style="display:none"></div>
+        							<div class="response" id="mce-success-response" style="display:none"></div>
+        						</div>
+        					</form>
+        				</div>
+        				<!--End mc_embed_signup-->
+        				<p style="font-style: italic; margin-bottom: 5px; color: #000;"><small>* We don't do spam, we do awesome.</small></p>
         			</div>
-        			
         		</div>
         		
         		<hr />
         		
-        		<p style="font-style: italic;"><a href="http://openinstitute.com"><img src="img/oi-logo.png" alt="Open Institute" style="height: 80px;" /></a></p>
+        		<table style="width: 100%;" class="hidden-phone"><tr>
+        		
+        			<td style="width: 50%;">
+        				<div id="afroKart"></div>
+        			</td>
+        			<td style="width: 50%; vertical-align: top; padding: 0 10px; text-align: left;">
+        				
+        				<h4>About</h4>
+        				<p>African Spending is a great tool to help keep track of government spending all over Africa.</p>
+        				<br />
+        				<h4>Why Spending Transparency?</h4>
+        				<p>Transparency helps keeps governments accountable to its citizens.</p>
+        				<br />
+        				<blockquote class="pull-right">
+        					<p>A lack of transparency results in distrust and a deep sense of insecurity.</p> 
+        					<small>Dalai Lama</small>
+        				</blockquote>
+        				
+        				<div class="clearfix"></div>
+        				<div>
+        					<span class='st_facebook_hcount' displayText='Facebook'></span>
+        					<span class='st_twitter_hcount' displayText='Tweet'></span>
+        					<span class='st_googleplus_hcount' displayText='Google +'></span>
+        				</div>
+        				
+        				<hr />
+        				
+        				<p style="text-align: center;"><a href="http://openinstitute.com"><img src="img/oi-logo.png" alt="Open Institute" style="height: 80px;" /></a></p>
+        				
+        			</td>
+        		
+        		</tr></table>
+        		
+        		<div class="visible-phone">
+        		
+        			<ul class="nav nav-pills" style="display: inline-block;">
+        				<li><a href="#about">About</a></li>
+        				<li><a href="#why">Why Transparency</a></li>
+        			</ul>
+        			
+        			<div id="afroKartMobi"></div>
+        			<div style="text-align: left;">
+        				<a name="about"></a>
+        				<h4>About</h4>
+        				<p>African Spending is a great tool to help keep track of government spending all over Africa.</p>
+        				<br />
+        				<a name="why"></a>
+        				<h4>Why Spending Transparency?</h4>
+        				<p>Transparency helps keeps governments accountable to its citizens.</p>
+        				<br />
+        				<blockquote class="pull-right">
+        					<p>A lack of transparency results in distrust and a deep sense of insecurity.</p> 
+        					<small>Dalai Lama</small>
+        				</blockquote>
+        				
+        				<div class="clearfix"></div>
+        				<div>
+        					<span class='st_facebook_hcount' displayText='Facebook'></span>
+        					<span class='st_twitter_hcount' displayText='Tweet'></span>
+        					<span class='st_googleplus_hcount' displayText='Google +'></span>
+        				</div>
+        				
+        				<hr />
+        				
+        				<p style="text-align: center;"><a href="http://openinstitute.com"><img src="img/oi-logo.png" alt="Open Institute" style="height: 80px;" /></a></p>
+        				
+        			</div>
+        			
+        		</div>
+        		
+        		<script type="text/javascript">
+        			var map = Kartograph.map('#afroKart');
+        			
+        			var setPathCol = function(path, selected, border){
+        				path.realFill = path.svgPath.attrs.fill;
+        				path.svgPath.attr({'fill': selected ? '#24a9e0':'#ccc'});//'#cc0033' : '#007a5e'});
+        				return path;
+        			}
+        			var setCountryCol = function(country, col, border){
+        				var path = map.getLayerPath('countries', country);
+        				return setPathCol(path, col, border);
+        			}
+        			
+        			map.loadMap('maps/africa_500.svg', function() {
+        				map.addLayer('countries', {
+        					key: 'country',
+        					styles: {
+        						fill: '#f7941e',
+        						'stroke-width': 1,
+        						'stroke': '#fff'
+        					},
+        					tooltips: function(d) {
+        						return d.country;
+        					},
+        					mouseenter: function(data) {
+        						setCountryCol(data.country, true, false);
+        					},
+        					mouseleave: function(data) {
+        						setCountryCol(data.country, false, false);
+        					}
+        				});
+        				
+        			});
+        			
+        			var mapMobi = Kartograph.map('#afroKartMobi');
+        			
+        			var setPathColMobi = function(path, selected, border){
+        				path.realFill = path.svgPath.attrs.fill;
+        				path.svgPath.attr({'fill': selected ? '#24a9e0':'#ccc'});//'#cc0033' : '#007a5e'});
+        				return path;
+        			}
+        			var setCountryColMobi = function(country, col, border){
+        				var path = mapMobi.getLayerPath('countries', country);
+        				return setPathCol(path, col, border);
+        			}
+        			
+        			mapMobi.loadMap('maps/africa_500.svg', function() {
+        				mapMobi.addLayer('countries', {
+        					key: 'country',
+        					styles: {
+        						fill: '#f7941e',
+        						'stroke-width': 1,
+        						'stroke': '#fff'
+        					},
+        					tooltips: function(d) {
+        						return d.country;
+        					},
+        					mouseenter: function(data) {
+        						setCountryColMobi(data.country, true, false);
+        					},
+        					mouseleave: function(data) {
+        						setCountryColMobi(data.country, false, false);
+        					}
+        				});
+        				
+        			});
+        			
+        		</script>
+        		
+        		<script>
+        			(function ($) {
+        				window.qTipConfig = { style: { name: 'light', tip: true },
+        					position: { corner: { target: 'bottomMiddle', tooltip: 'topMiddle' }}};
+        				$('a[title]').qtip(qTipConfig);
+        			}(jQuery));
+        		</script>
+        		
         	</div>
         </div>
         
