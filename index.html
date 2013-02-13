@@ -26,6 +26,7 @@
         <script src="js/kartograph.js"></script>
         <script src="js/vendor/jquery.qtip.js"></script>
         <link rel="stylesheet" type="text/css" href="css/jquery.qtip.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/map-style.css">-->
         
         <style>
         	body{
@@ -50,6 +51,7 @@
         				<h1 style="font-size: 300%;">
         					<span style="font-weight: normal;">African</span>Spending
         				</h1>
+        				<p>Improving Watchdog Journalism by Mapping the Money</p>
         			</td>
         			<td valign="middle">
         				<div style="max-width:400px; margin: 0 auto;">
@@ -79,6 +81,8 @@
         			<h1 style="font-size: 300%;">
         				<span style="font-weight: normal;">African</span>Spending
         			</h1>
+        			<p>Improving Watchdog Journalism by Mapping the Money</p>
+        			<hr />
         			<div style="max-width:400px; margin: 0 auto;">
         				<p class="lead">We are working hard on awesome stuff. Sign up for upcoming announcements.</p>
         			</div>
@@ -107,11 +111,23 @@
         				<div id="afroKart"></div>
         				<script type="text/javascript">
         					var map = Kartograph.map('#afroKart');
-        					map.loadCSS('css/map_styles.css', function() {
-        						map.loadMap('maps/africa_500.svg', function() {
-        							map.addLayer('countries', {key: 'country'});
+        					map.loadMap('maps/africa_500.svg', function() {
+        						map.addLayer('countries', {
+        							key: 'country',
+        							styles: {
+        								fill: '#999',
+        								'stroke-width': 1,
+        								'stroke': '#fff'
+        							},
+        							tooltips: function(d) {
+        								return d.country;
+        							},
+        							click: function(data, path, event) {
+        								
+        							}
         						});
         					});
+        					
         				</script>
         				
         				<script>
