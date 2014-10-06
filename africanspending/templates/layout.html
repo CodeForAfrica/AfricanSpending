@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}(Untitled){% endblock %} - African Spending</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}africa, budget, open budget, spending, open spending, fiscal, finance{% endblock %}">
+    <meta name="author" content="Code for Africa">
+
+    <meta name="og:site_name" content="African Spending">
+
+    {% assets filters="less,cssmin,cssrewrite", output="assets/vendor.css",
+        "style/vendor.less"
+    %}
+      <link type="text/css" href="{{ ASSET_URL }}" rel="stylesheet">
+    {% endassets %}
+    {% assets filters="less,cssmin,cssrewrite", output="assets/app.css",
+        "style/style.less"
+    %}
+      <link type="text/css" href="{{ ASSET_URL }}" rel="stylesheet">
+    {% endassets %}
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="http://www.codeforafrica.org/favicon.png">
+  </head>
+  <body>
+    <div class="container-fluid">
+      {% include 'nav.html' %}
+      {% block content %}{% endblock %}
+    </div>
+
+    {% include 'footer.html' %}
+    {% assets filters="uglifyjs", output="assets/vendor.js",
+          "vendor/jquery/dist/jquery.js",
+          "vendor/bootstrap/js/collapse.js",
+          "vendor/bootstrap/js/dropdown.js"
+      %}
+      <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+
+    {% block js %}{% endblock %}
+
+    {% include 'ga.html' %}
+  </body>
+</html>
+

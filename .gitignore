@@ -4,4 +4,5 @@ _site/
 *.pyc
 *.egg-info
 africanspending/static/vendor/*
+africanspending/static/.webassets-cache/*
 
