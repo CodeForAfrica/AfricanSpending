@@ -1,0 +1,11 @@
+{
+  "name": "africanspending",
+  "version": "1.0",
+  "main": "africanspending/static/style/style.less",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+  }
+}

@@ -1,1 +1,7 @@
 _site/
+
+.env
+*.pyc
+*.egg-info
+africanspending/static/vendor/*
+
