@@ -12,11 +12,7 @@
 
     <meta name="og:site_name" content="African Spending">
 
-    {% assets filters="less,cssmin,cssrewrite", output="assets/vendor.css",
-        "style/vendor.less"
-    %}
-      <link type="text/css" href="{{ ASSET_URL }}" rel="stylesheet">
-    {% endassets %}
+    
     {% assets filters="less,cssmin,cssrewrite", output="assets/app.css",
         "style/style.less"
     %}
