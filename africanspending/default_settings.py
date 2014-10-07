@@ -1,2 +1,5 @@
 DEBUG = True
 ASSETS_DEBUG = False
+
+FLATPAGES_ROOT = '../pages'
+FLATPAGES_EXTENSION = '.md'
