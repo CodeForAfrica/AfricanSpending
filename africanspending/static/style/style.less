@@ -2,6 +2,38 @@
 @import "vendor.less";
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6em;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 1.8em;
+    font-weight: 300;
+
+    background-color: #eee;
+    //background-color: @col-4;
+    background-color: @col-1;
+}
+
+#page {
+    background-color: #fdfdfd;
+    padding: 0 0 4em 0;
+}
+
+.navbar.navbar-default {
+    padding: 1em 0 1em 0;
+    background-color: transparent;
+    border-bottom: 0;
+    text-transform: uppercase;
+
+    .navbar-brand {
+        font-weight: 900;
+        color: @col-1;
+    }
+}
+
+footer {
+    padding: 2em 0 2em 0;
+    font-size: 0.8em;
+
+    &, a, a:hover {
+        color: #fff;
+    }
 }
