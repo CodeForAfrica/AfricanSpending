@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ lemma.term }}
+{% endblock %}
+
+{% block description %}
+    {{ lemma.short }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{lemma.term}}</h1>
+    <div class="short">
+        {{ lemma.short }}
+    </div>
+    
+    {{ lemma.full | safe }}
+{% endblock %}
+
+

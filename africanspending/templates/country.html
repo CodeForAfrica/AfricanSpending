@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{country.label}}
+{% endblock %}
+
+{% block description %}
+    Information on projects, organisations and datasets in {{country.label}} related 
+    to government spending, budgets and revenue.
+{% endblock %}
+
+{% block content %}
+    <h1>{{country.label_full}}</h1>
+    
+{% endblock %}
+
+

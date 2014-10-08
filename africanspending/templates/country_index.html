@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Countries overview
+{% endblock %}
+
+{% block description %}
+    Countries for which we collect information on projects, organisations and datasets related 
+    to government spending, budgets and revenue.
+{% endblock %}
+
+{% block content %}
+    <h1>Countries</h1>
+    
+    <ul>
+        {% for country in countries.values() | sort(attribute='label') %}
+        <li><a href="{{url_for('country', slug=country.slug)}}">{{country.label}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+

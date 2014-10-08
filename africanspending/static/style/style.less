@@ -8,8 +8,8 @@ body {
     font-weight: 300;
 
     background-color: #eee;
-    //background-color: @col-4;
-    background-color: @col-1;
+    background-color: #333;
+    //background-color: @col-1;
 }
 
 #page {
@@ -30,10 +30,25 @@ body {
 }
 
 footer {
+    border-top: 4px solid @col-1;
     padding: 2em 0 2em 0;
     font-size: 0.8em;
 
     &, a, a:hover {
+        //color: #999;
         color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
     }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bitter';
+    //text-transform: uppercase;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-top: 0;
 }
