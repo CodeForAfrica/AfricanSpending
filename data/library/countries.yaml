@@ -29,10 +29,18 @@ bz:
   label: Belize
   label_full: Belize
 cd:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZazNicV9ydG5Kb00
   iso2: CD
   iso3: ZAR
   label: DR Congo (Kinshasa)
   label_full: Democratic Republic of the Congo
+  obi:
+  - score: 1
+    year: 2008
+  - score: 6
+    year: 2010
+  - score: 18
+    year: 2012
 cf:
   iso2: CF
   iso3: CAF
@@ -44,10 +52,12 @@ cg:
   label: Congo (Brazzaville)
   label_full: Republic of the Congo
 ci:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZSHg1RFZYTTJVSHM
   iso2: CI
   iso3: CIV
   label: Ivory Coast
   label_full: Ivory Coast
+  obi: null
 cm:
   iso2: CM
   iso3: CMR
@@ -69,10 +79,20 @@ dz:
   label: Algeria
   label_full: People's Democratic Republic of Algeria
 eg:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZaHFPdmRRMldBX0E
   iso2: EG
   iso3: EGY
   label: Egypt
   label_full: Arab Republic of Egypt
+  obi:
+  - score: 19
+    year: 2006
+  - score: 43
+    year: 2008
+  - score: 49
+    year: 2010
+  - score: 13
+    year: 2012
 er:
   iso2: ER
   iso3: ERI
@@ -89,10 +109,20 @@ ga:
   label: Gabon
   label_full: Gabon
 gh:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZODUwbWpacExaM1U
   iso2: GH
   iso3: GHA
   label: Ghana
   label_full: Ghana
+  obi:
+  - score: 42
+    year: 2006
+  - score: 50
+    year: 2008
+  - score: 54
+    year: 2010
+  - score: 50
+    year: 2012
 gm:
   iso2: GM
   iso3: GMB
@@ -114,10 +144,20 @@ gw:
   label: Guinea-Bissau
   label_full: Guinea-Bissau
 ke:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZT1VWajJUY0o0Ykk
   iso2: KE
   iso3: KEN
   label: Kenya
   label_full: Kenya
+  obi:
+  - score: 48
+    year: 2006
+  - score: 58
+    year: 2008
+  - score: 49
+    year: 2010
+  - score: 49
+    year: 2012
 lr:
   iso2: LR
   iso3: LBR
@@ -144,10 +184,16 @@ mg:
   label: Madagascar
   label_full: Madagascar
 ml:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZMlRuNzZHRzBpZlU
   iso2: ML
   iso3: MLI
   label: Mali
   label_full: Mali
+  obi:
+  - score: 35
+    year: 2010
+  - score: 43
+    year: 2012
 mr:
   iso2: MR
   iso3: MRT
@@ -174,15 +220,33 @@ na:
   label: Namibia
   label_full: Namibia
 ne:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZTmd2bkh0UFdYa0U
   iso2: NE
   iso3: NER
   label: Niger
   label_full: Niger
+  obi:
+  - score: 26
+    year: 2008
+  - score: 3
+    year: 2010
+  - score: 4
+    year: 2012
 ng:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZU2J2alA3TE1TcWc
   iso2: NG
   iso3: NGA
   label: Nigeria
   label_full: Federal Republic of Nigeria
+  obi:
+  - score: 20
+    year: 2006
+  - score: 19
+    year: 2008
+  - score: 18
+    year: 2010
+  - score: 16
+    year: 2012
 rw:
   iso2: RW
   iso3: RWA
@@ -199,15 +263,27 @@ sd:
   label: Sudan
   label_full: Sudan
 sl:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZVWNianpYbk5aTGs
   iso2: SL
   iso3: SLE
   label: Sierra Leone
   label_full: Sierra Leone
+  obi:
+  - score: 39
+    year: 2012
 sn:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZcmk1MXJUcDdvLTQ
   iso2: SN
   iso3: SEN
   label: Senegal
   label_full: Senegal
+  obi:
+  - score: 3
+    year: 2008
+  - score: 3
+    year: 2010
+  - score: 10
+    year: 2012
 so:
   iso2: SO
   iso3: SOM
@@ -239,15 +315,29 @@ tg:
   label: Togo
   label_full: Togolese Republic
 tn:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZYURaVktqZnlIQTg
   iso2: TN
   iso3: TUN
   label: Tunisia
   label_full: Tunisia
+  obi:
+  - score: 11
+    year: 2012
 tz:
+  ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZMTZqckthN3ZBQU0
   iso2: TZ
   iso3: TZA
   label: Tanzania
   label_full: Tanzania
+  obi:
+  - score: 48
+    year: 2006
+  - score: 36
+    year: 2008
+  - score: 45
+    year: 2010
+  - score: 47
+    year: 2012
 ug:
   iso2: UG
   iso3: UGA
