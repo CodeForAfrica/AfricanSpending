@@ -12,11 +12,22 @@
 {% block content %}
     <h1>Countries</h1>
     
-    <ul>
-        {% for country in countries.values() | sort(attribute='label') %}
-        <li><a href="{{url_for('country', slug=country.slug)}}">{{country.label}}</a></li>
+    <div class="row">
+        {% for group in countries.values() | groupby('un_region') %}
+            <div class="col-md-4">
+                <h3>{{group.grouper}}</h3>
+                <ul>
+                    {% for country in group.list | sort(attribute='label') %}
+                    <li><a href="{{url_for('country', slug=country.slug)}}">{{country.label}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% if loop.index % 3 == 0 %}
+                </div>
+                <div class="row">
+            {% endif %}
         {% endfor %}
-    </ul>
+    </div>
 {% endblock %}
 
 

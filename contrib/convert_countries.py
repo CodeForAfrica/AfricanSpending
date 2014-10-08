@@ -36,7 +36,7 @@ with open(os.path.join(my_path, 'countries.csv'), 'r') as fh:
             'iso2': row.get('iso2'),
             'iso3': row.get('iso3'),
             'label_full': row.get('country'),
-            'label': row.get('country'),
+            'label': row.get('country')
         }
         od = out.get(key, {})
         for k, v in data.items():
@@ -51,6 +51,8 @@ for cd in json.load(open(os.path.join(my_path, 'obs.json'), 'rb')):
     pprint(cd)
     out[key]['obi'] = cd.get('obi_scores')
     out[key]['ibp_library'] = cd.get('library')
+    out[key]['obstracker_url'] = 'http://www.obstracker.org/country/%s' % cd.get('country')
+    out[key]['obi_url'] = 'http://survey.internationalbudget.org/#profile/%s' % cd.get('code')
 
 
 print 'missing', set(COUNTRIES) - set(out.keys())
