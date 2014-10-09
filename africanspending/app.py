@@ -14,3 +14,6 @@ pages = FlatPages(app)
 
 app.data_path = os.path.abspath(os.path.join(os.path.dirname(__file__),
                                 '..', 'data'))
+
+if not app.debug:
+    assets.auto_build = False
