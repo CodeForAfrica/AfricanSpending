@@ -37,7 +37,10 @@
     {% assets filters="uglifyjs", output="assets/vendor.js",
           "vendor/jquery/dist/jquery.js",
           "vendor/bootstrap/js/collapse.js",
-          "vendor/bootstrap/js/dropdown.js"
+          "vendor/bootstrap/js/dropdown.js",
+          "vendor/d3/d3.js",
+          "vendor/topojson/topojson.js",
+          "js/map.js"
       %}
       <script type="text/javascript" src="{{ ASSET_URL }}"></script>
     {% endassets %}

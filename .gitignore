@@ -6,3 +6,4 @@ _site/
 africanspending/static/vendor/*
 africanspending/static/.webassets-cache/*
 
+contrib/maps/*

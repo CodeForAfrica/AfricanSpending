@@ -3,7 +3,7 @@ import yaml, json
 import unicodecsv
 from pprint import pprint
 
-COUNTRIES = ['za', 'dz', 'ao', 'bz', 'bw', 'bf', 'bi',
+COUNTRIES = ['za', 'dz', 'ao', 'bw', 'bf', 'bi',
              'cm', 'cf', 'td', 'cg', 'cd', 'dj', 'eg',
              'er', 'et', 'ga', 'gm', 'gh', 'gn', 'gw',
              'ci', 'ke', 'ly', 'ls', 'lr', 'mg', 'mw',
@@ -13,6 +13,8 @@ COUNTRIES = ['za', 'dz', 'ao', 'bz', 'bw', 'bf', 'bi',
              'mu', 'rw', 'st', 'sc', 'eh', 'tg']
 
 print len(set(COUNTRIES))
+
+print map(lambda c: c.upper(), COUNTRIES)
 
 my_path = os.path.dirname(__file__)
 
@@ -48,12 +50,14 @@ for cd in json.load(open(os.path.join(my_path, 'obs.json'), 'rb')):
     key = cd['code'].lower()
     if key not in out:
         continue
-    pprint(cd)
+    #pprint(cd)
     out[key]['obi'] = cd.get('obi_scores')
     out[key]['ibp_library'] = cd.get('library')
     out[key]['obstracker_url'] = 'http://www.obstracker.org/country/%s' % cd.get('country')
     out[key]['obi_url'] = 'http://survey.internationalbudget.org/#profile/%s' % cd.get('code')
 
+
+print sorted(map(lambda o: o.get('iso3'), out.values()))
 
 print 'missing', set(COUNTRIES) - set(out.keys())
 

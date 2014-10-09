@@ -11,16 +11,16 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{{self.title()}}</h1>
-    AfricanSpending will aim to make government financial information more accessible to
-    citizens of African countries.
-    <!--
-    <br><br><br><br>
-    <a href="#">Also, marblecake</a>
-
-    We explore how digital technology can help journalists, activists and engaged citizens to 
-    'follow the money'. 
-    -->
+    <div class="row">
+        <div class="col-md-6">
+            <h1>{{self.title()}}</h1>
+            AfricanSpending will aim to make government financial information
+            more accessible to citizens of African countries.
+        </div>
+        <div class="col-md-6">
+            <div id="map" style="width: 100%;"></div>
+        </div>
+    </div>
 {% endblock %}
 
 

@@ -3,38 +3,37 @@ ao:
   iso3: AGO
   label: Angola
   label_full: Angola
-  un_region: 'Central Africa'
+  un_region: Central Africa
 bf:
   iso2: BF
   iso3: BFA
   label: Burkina Faso
   label_full: Burkina Faso
-  un_region: 'Western Africa'
+  un_region: Western Africa
 bi:
   iso2: BI
   iso3: BDI
   label: Burundi
   label_full: Burundi
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 bj:
   iso2: BJ
   iso3: BEN
   label: Benin
   label_full: Benin
-  un_region: 'Western Africa'
+  un_region: Western Africa
 bw:
   iso2: BW
   iso3: BWA
   label: Botswana
   label_full: Botswana
-  un_region: 'Southern Africa'
+  un_region: Southern Africa
 cd:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZazNicV9ydG5Kb00
   iso2: CD
-  iso3: ZAR
+  iso3: COD
   label: DR Congo (Kinshasa)
   label_full: Democratic Republic of the Congo
-  un_region: 'Central Africa'
   obi:
   - score: 1
     year: 2008
@@ -44,59 +43,59 @@ cd:
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/CD
   obstracker_url: http://www.obstracker.org/country/Dem. Rep. of Congo
+  un_region: Central Africa
 cf:
   iso2: CF
   iso3: CAF
   label: Central African Republic
   label_full: Central African Republic
-  un_region: 'Central Africa'
+  un_region: Central Africa
 cg:
   iso2: CG
   iso3: COG
   label: Congo (Brazzaville)
   label_full: Republic of the Congo
-  un_region: 'Central Africa'
+  un_region: Central Africa
 ci:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZSHg1RFZYTTJVSHM
   iso2: CI
   iso3: CIV
   label: Ivory Coast
   label_full: Ivory Coast
-  un_region: 'Western Africa'
   obi: null
   obi_url: http://survey.internationalbudget.org/#profile/CI
   obstracker_url: http://www.obstracker.org/country/Côte d’Ivoire
+  un_region: Western Africa
 cm:
   iso2: CM
   iso3: CMR
   label: Cameroon
   label_full: Cameroon
-  un_region: 'Central Africa'
+  un_region: Central Africa
 cv:
   iso2: CV
   iso3: CPV
   label: Cape Verde Islands
   label_full: Cape Verde Islands
-  un_region: 'Western Africa'
+  un_region: Western Africa
 dj:
   iso2: DJ
   iso3: DJI
   label: Djibouti
   label_full: Djibouti
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 dz:
   iso2: DZ
   iso3: DZA
   label: Algeria
   label_full: People's Democratic Republic of Algeria
-  un_region: 'Northern Africa'
+  un_region: Northern Africa
 eg:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZaHFPdmRRMldBX0E
   iso2: EG
   iso3: EGY
   label: Egypt
   label_full: Arab Republic of Egypt
-  un_region: 'Northern Africa'
   obi:
   - score: 19
     year: 2006
@@ -108,31 +107,37 @@ eg:
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/EG
   obstracker_url: http://www.obstracker.org/country/Egypt
+  un_region: Northern Africa
+eh:
+  iso2: EH
+  iso3: SAH
+  label: Western Sahara
+  label_full: Western Sahara
+  un_region: Western Africa
 er:
   iso2: ER
   iso3: ERI
   label: Eritrea
   label_full: State of Eritrea
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 et:
   iso2: ET
   iso3: ETH
   label: Ethiopia
   label_full: Ethiopia
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 ga:
   iso2: GA
   iso3: GAB
   label: Gabon
   label_full: Gabon
-  un_region: 'Central Africa'
+  un_region: Central Africa
 gh:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZODUwbWpacExaM1U
   iso2: GH
   iso3: GHA
   label: Ghana
   label_full: Ghana
-  un_region: 'Western Africa'
   obi:
   - score: 42
     year: 2006
@@ -144,37 +149,37 @@ gh:
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/GH
   obstracker_url: http://www.obstracker.org/country/Ghana
+  un_region: Western Africa
 gm:
   iso2: GM
   iso3: GMB
   label: Gambia
   label_full: Gambia
-  un_region: 'Western Africa'
+  un_region: Western Africa
 gn:
   iso2: GN
   iso3: GIN
   label: Guinea
   label_full: Guinea
-  un_region: 'Western Africa'
+  un_region: Western Africa
 gq:
   iso2: GQ
   iso3: GNQ
   label: Equatorial Guinea
   label_full: Equatorial Guinea
-  un_region: 'Central Africa'
+  un_region: Central Africa
 gw:
   iso2: GW
   iso3: GNB
   label: Guinea-Bissau
   label_full: Guinea-Bissau
-  un_region: 'Western Africa'
+  un_region: Western Africa
 ke:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZT1VWajJUY0o0Ykk
   iso2: KE
   iso3: KEN
   label: Kenya
   label_full: Kenya
-  un_region: 'Eastern Africa'
   obi:
   - score: 48
     year: 2006
@@ -186,43 +191,43 @@ ke:
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/KE
   obstracker_url: http://www.obstracker.org/country/Kenya
+  un_region: Eastern Africa
 lr:
   iso2: LR
   iso3: LBR
   label: Liberia
   label_full: Liberia
-  un_region: 'Western Africa'
+  un_region: Western Africa
 ls:
   iso2: LS
   iso3: LSO
   label: Lesotho
   label_full: Lesotho
-  un_region: 'Southern Africa'
+  un_region: Southern Africa
 ly:
   iso2: LY
   iso3: LBY
   label: Libya
   label_full: Libya
-  un_region: 'Northern Africa'
+  un_region: Northern Africa
 ma:
   iso2: MA
   iso3: MAR
   label: Morocco
   label_full: Kingdom of Morocco
-  un_region: 'Northern Africa'
+  un_region: Northern Africa
 mg:
   iso2: MG
   iso3: MDG
   label: Madagascar
   label_full: Madagascar
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 ml:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZMlRuNzZHRzBpZlU
   iso2: ML
   iso3: MLI
   label: Mali
   label_full: Mali
-  un_region: 'Western Africa'
   obi:
   - score: 35
     year: 2010
@@ -230,43 +235,43 @@ ml:
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/ML
   obstracker_url: http://www.obstracker.org/country/Mali
+  un_region: Western Africa
 mr:
   iso2: MR
   iso3: MRT
   label: Mauritania
   label_full: Mauritania
-  un_region: 'Western Africa'
+  un_region: Western Africa
 mu:
   iso2: MU
   iso3: MUS
   label: Mauritius
   label_full: Mauritius
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 mw:
   iso2: MW
   iso3: MWI
   label: Malawi
   label_full: Malawi
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 mz:
   iso2: MZ
   iso3: MOZ
   label: Mozambique
   label_full: Mozambique
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 na:
   iso2: NA
   iso3: NAM
   label: Namibia
   label_full: Namibia
-  un_region: 'Southern Africa'
+  un_region: Southern Africa
 ne:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZTmd2bkh0UFdYa0U
   iso2: NE
   iso3: NER
   label: Niger
   label_full: Niger
-  un_region: 'Western Africa'
   obi:
   - score: 26
     year: 2008
@@ -276,13 +281,13 @@ ne:
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/NE
   obstracker_url: http://www.obstracker.org/country/Niger
+  un_region: Western Africa
 ng:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZU2J2alA3TE1TcWc
   iso2: NG
   iso3: NGA
   label: Nigeria
   label_full: Federal Republic of Nigeria
-  un_region: 'Western Africa'
   obi:
   - score: 20
     year: 2006
@@ -294,43 +299,43 @@ ng:
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/NG
   obstracker_url: http://www.obstracker.org/country/Nigeria
+  un_region: Western Africa
 rw:
   iso2: RW
   iso3: RWA
   label: Rwanda
   label_full: Rwanda
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 sc:
   iso2: SC
   iso3: SYC
   label: Seychelles
   label_full: Seychelles
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 sd:
   iso2: SD
   iso3: SDN
   label: Sudan
   label_full: Sudan
-  un_region: 'Northern Africa'
+  un_region: Northern Africa
 sl:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZVWNianpYbk5aTGs
   iso2: SL
   iso3: SLE
   label: Sierra Leone
   label_full: Sierra Leone
-  un_region: 'Western Africa'
   obi:
   - score: 39
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/SL
   obstracker_url: http://www.obstracker.org/country/Sierra Leone
+  un_region: Western Africa
 sn:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZcmk1MXJUcDdvLTQ
   iso2: SN
   iso3: SEN
   label: Senegal
   label_full: Senegal
-  un_region: 'Western Africa'
   obi:
   - score: 3
     year: 2008
@@ -340,61 +345,67 @@ sn:
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/SN
   obstracker_url: http://www.obstracker.org/country/Senegal
+  un_region: Western Africa
 so:
   iso2: SO
   iso3: SOM
   label: Somalia
   label_full: Federal Republic of Somalia
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
+sl:
+  iso2: SL
+  iso3: SOL
+  label: Somaliland
+  label_full: Somaliland
+  un_region: Eastern Africa
 ss:
   iso2: SS
-  iso3: SSD
+  iso3: SDS
   label: South Sudan
   label_full: South Sudan
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 st:
   iso2: ST
   iso3: STP
-  label: 'Sao Tome & Principe'
+  label: Sao Tome & Principe
   label_full: Democratic Republic of São Tomé and Príncipe
-  un_region: 'Central Africa'
+  un_region: Central Africa
 sz:
   iso2: SZ
   iso3: SWZ
   label: Swaziland
   label_full: Kingdom of Swaziland
-  un_region: 'Southern Africa'
+  un_region: Southern Africa
 td:
   iso2: TD
   iso3: TCD
   label: Chad
   label_full: Chad
-  un_region: 'Central Africa'
+  un_region: Central Africa
 tg:
   iso2: TG
   iso3: TGO
   label: Togo
   label_full: Togolese Republic
-  un_region: 'Western Africa'
+  un_region: Western Africa
 tn:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZYURaVktqZnlIQTg
   iso2: TN
   iso3: TUN
   label: Tunisia
   label_full: Tunisia
-  un_region: 'Northern Africa'
   obi:
   - score: 11
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/TN
   obstracker_url: http://www.obstracker.org/country/Tunisia
+  un_region: Northern Africa
 tz:
   ibp_library: https://docs.google.com/folderview?pli=1&id=0ByA9wmvBrAnZMTZqckthN3ZBQU0
   iso2: TZ
   iso3: TZA
   label: Tanzania
   label_full: Tanzania
-  un_region: 'Eastern Africa'
   obi:
   - score: 48
     year: 2006
@@ -406,27 +417,28 @@ tz:
     year: 2012
   obi_url: http://survey.internationalbudget.org/#profile/TZ
   obstracker_url: http://www.obstracker.org/country/Tanzania
+  un_region: Eastern Africa
 ug:
   iso2: UG
   iso3: UGA
   label: Uganda
   label_full: Uganda
-  un_region: 'Eastern Africa'
+  un_region: Eastern Africa
 za:
   iso2: ZA
   iso3: ZAF
   label: South Africa
   label_full: South Africa
-  un_region: 'Southern Africa'
+  un_region: Southern Africa
 zm:
   iso2: ZM
   iso3: ZMB
   label: Zambia
-  un_region: 'Eastern Africa'
   label_full: Zambia
+  un_region: Eastern Africa
 zw:
   iso2: ZW
   iso3: ZWE
   label: Zimbabwe
-  un_region: 'Eastern Africa'
   label_full: Zimbabwe
+  un_region: Eastern Africa
