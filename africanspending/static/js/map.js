@@ -1,5 +1,6 @@
 $(function() {
-    var $map = $('#map');
+    var $map = $('#map'),
+        mapLinks = $map.data('map-links');
 
     var drawMap = function($dfd) {
         var width = $map.width(),
@@ -25,7 +26,21 @@ $(function() {
                     .data(countries.features)
                 .enter().append("path")
                     .attr("class", function(d) { return "country " + d.id;})
-                    .attr("d", path);
+                    .attr("d", path)
+                    .on("click", function(d) {
+                        var path = mapLinks[d.id];
+                        if (path) {
+                            window.location = path;
+                        }
+                    })
+                    .on("mouseenter", function(d) {
+                        var self = d3.select(this);
+                        self.attr('class', 'hovered country ' + d.id);
+                    })
+                    .on("mouseleave", function(d) {
+                        var self = d3.select(this);
+                        self.attr('class', 'country ' + d.id);  
+                    });
 
             svg.append("path")
                 .datum(topojson.feature(mapData, mapData.objects.places))

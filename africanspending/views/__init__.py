@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, redirect, url_for
 
 from africanspending.app import app
 from africanspending.views import page # noqa
@@ -9,8 +9,13 @@ from africanspending.data import load_topics
 
 @app.context_processor
 def inject_globals():
+    countries = load_countries()
+    map_links = {}
+    for k, v in countries.items():
+        map_links[v.get('iso3')] = v.get('path')
     return {
-        'countries': load_countries(),
+        'countries': countries,
+        'map_links': map_links,
         'library': load_library(),
         'topics': load_topics()
     }
@@ -19,7 +24,8 @@ def inject_globals():
 @app.route('/')
 @app.route('/index.html')
 def index():
-    return render_template('index.html')
+    return redirect(url_for('library'))
+    #return render_template('index.html')
 
 
 @app.route('/<file_name>.txt', methods=['GET'])

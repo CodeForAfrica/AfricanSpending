@@ -4833,7 +4833,6 @@ body {
   line-height: 1.8em;
   font-weight: 300;
   background-color: #eee;
-  background-color: #333;
 }
 #page {
   background-color: #fdfdfd;
@@ -4853,13 +4852,18 @@ footer {
   border-top: 4px solid #cf3d1e;
   padding: 2em 0 2em 0;
   font-size: 0.8em;
+  line-height: 1.4em;
+  color: #333;
 }
-footer,
-footer a,
-footer a:hover {
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
+footer ul {
+  color: #999;
+  list-style-type: square;
+}
+footer ul li {
+  margin-bottom: 0.5em;
+}
+footer img {
+  padding: 1em;
 }
 h1,
 h2,
@@ -4877,6 +4881,11 @@ h1 {
   fill: #eee;
   stroke: #ccc;
 }
+#map path.country.hovered {
+  fill: #cf3d1e;
+  stroke: #cf3d1e;
+  cursor: pointer;
+}
 #map .place {
   fill: #aaa;
 }
@@ -4884,6 +4893,17 @@ h1 {
   font-size: 0.7em;
   fill: #333;
 }
+h1.map-header {
+  margin-bottom: 1em;
+}
+@media (min-width: 992px) {
+  h1.map-header {
+    margin-top: 20%;
+  }
+}
 .help-block {
   font-size: 0.8em;
+}
+.teaser {
+  font-weight: 700;
 }

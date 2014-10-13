@@ -8,7 +8,7 @@ body {
     font-weight: 300;
 
     background-color: #eee;
-    background-color: #333;
+    //background-color: #333;
     //background-color: @col-1;
 }
 
@@ -25,20 +25,34 @@ body {
 
     .navbar-brand {
         font-weight: 900;
-        color: @col-1;
+        color: @brand-primary;
     }
 }
 
 footer {
-    border-top: 4px solid @col-1;
+    border-top: 4px solid @brand-primary;
     padding: 2em 0 2em 0;
     font-size: 0.8em;
+    line-height: 1.4em;
+    color: #333;
 
     &, a, a:hover {
-        //color: #999;
-        color: #fff;
-        font-weight: 600;
-        text-transform: uppercase;
+        //color: #fff;
+        //font-weight: 600;
+        //text-transform: uppercase;
+    }
+
+    ul {
+        color: #999;
+        list-style-type: square;
+
+        li {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    img {
+        padding: 1em;
     }
 }
 
@@ -59,6 +73,12 @@ h1 {
         stroke: #ccc;
     }
 
+    path.country.hovered {
+        fill: @brand-primary;
+        stroke: @brand-primary;
+        cursor: pointer;
+    }
+
     .place {
         fill: #aaa;
     }
@@ -69,6 +89,20 @@ h1 {
     }
 }
 
+h1.map-header {
+    margin-bottom: 1em;
+}
+
+@media (min-width: @screen-md-min) {
+    h1.map-header {
+        margin-top: 20%;
+    }    
+}
+
 .help-block {
     font-size: 0.8em;
+}
+
+.teaser {
+    font-weight: 700;
 }

@@ -5,21 +5,12 @@
 {% endblock %}
 
 {% block description %}
-    We make the public purse transparent to citizens through data-driven analysis and
-    visualization. AfricanSpending also features a survey of budget-related initiatives,
-    projects and datasets in African countries.
+    
 {% endblock %}
 
 {% block content %}
     <div class="row">
-        <div class="col-md-6">
-            <h1>{{self.title()}}</h1>
-            AfricanSpending will aim to make government financial information
-            more accessible to citizens of African countries.
-        </div>
-        <div class="col-md-6">
-            <div id="map" style="width: 100%;"></div>
-        </div>
+        <a href="{{url_for('library')}}">go here</a>
     </div>
 {% endblock %}
 

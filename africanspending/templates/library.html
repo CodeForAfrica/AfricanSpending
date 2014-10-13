@@ -3,15 +3,58 @@
 
 
 {% block title %}
-    Countries overview
+    Where does the money go in Africa?
 {% endblock %}
 
 {% block description %}
-    Countries for which we collect information on projects, organisations and datasets related 
-    to government spending, budgets and revenue.
+    We make the public purse transparent to citizens through data-driven analysis and
+    visualization. AfricanSpending also features a survey of budget-related initiatives,
+    projects and datasets in African countries.
 {% endblock %}
 
 {% block content %}
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="map-header">Where does the money go?</h1>
+            <p class="teaser">
+                How do governments spend our taxes? Are the planned projects actually built?
+                What contracts do governments make to sell their natural wealth?
+                AfricanSpending looks at how we can use data to answer these questions.
+            </p>
+
+            <p>
+                Stay up to date on AfricanSpending and sign up to our mailing list!
+            </p>
+            
+            <form action="http://openinstitute.us6.list-manage2.com/subscribe/post?u=65e5825507b3cec760f272e79&amp;id=ca87ff77f0" method="post" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                <div class="form-group">
+                    <input type="email" value="" name="EMAIL" class="required email form-control input-lg" placeholder="Email Address">
+                    <button type="submit" name="subscribe" class="btn btn-default input-lg">Subscribe</button>
+                </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+            </form>
+            
+
+            
+            <!--p>
+                A large number of organisations across African countries are exploring new 
+                ways to understand, explain and influence the way in which government collects 
+                and spends money on behalf of it's citizens.
+            </p>
+            <p>
+                In this library, we're sharing examples of how data-driven initiatives use
+                information about public finances to engage citizens, prevent corruption and
+                report the news.
+            </p-->
+        </div>
+        <div class="col-md-6">
+            <div id="map" style="width: 100%;" data-map-links='{{ map_links | tojson() }}'></div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-4">
             <h3>Topics</h3>
