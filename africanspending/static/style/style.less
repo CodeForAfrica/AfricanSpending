@@ -13,7 +13,7 @@ body {
 }
 
 #page {
-    background-color: #fdfdfd;
+    background-color: #f9f9f9;
     padding: 0 0 4em 0;
 }
 
@@ -71,6 +71,11 @@ h1 {
     path.country {
         fill: #fff;
         stroke: lighten(@brand-primary, 40%);
+    }
+
+    path.country.selected {
+        fill: @brand-primary;
+        stroke: @brand-primary;
     }
 
     path.country.hovered {

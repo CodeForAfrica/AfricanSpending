@@ -4835,7 +4835,7 @@ body {
   background-color: #eee;
 }
 #page {
-  background-color: #fdfdfd;
+  background-color: #f9f9f9;
   padding: 0 0 4em 0;
 }
 .navbar.navbar-default {
@@ -4880,6 +4880,10 @@ h1 {
 #map path.country {
   fill: #fff;
   stroke: #f6ccc3;
+}
+#map path.country.selected {
+  fill: #cf3d1e;
+  stroke: #cf3d1e;
 }
 #map path.country.hovered {
   fill: #cf3d1e;
