@@ -4878,8 +4878,8 @@ h1 {
   margin-top: 0;
 }
 #map path.country {
-  fill: #eee;
-  stroke: #ccc;
+  fill: #fff;
+  stroke: #f6ccc3;
 }
 #map path.country.hovered {
   fill: #cf3d1e;
@@ -4887,10 +4887,11 @@ h1 {
   cursor: pointer;
 }
 #map .place {
-  fill: #aaa;
+  fill: #cf3d1e;
 }
 #map .place-label {
-  font-size: 0.7em;
+  font-size: 0.9em;
+  font-weight: 300;
   fill: #333;
 }
 h1.map-header {

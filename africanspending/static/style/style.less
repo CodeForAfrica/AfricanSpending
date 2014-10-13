@@ -69,8 +69,8 @@ h1 {
 
 #map {
     path.country {
-        fill: #eee;
-        stroke: #ccc;
+        fill: #fff;
+        stroke: lighten(@brand-primary, 40%);
     }
 
     path.country.hovered {
@@ -80,11 +80,12 @@ h1 {
     }
 
     .place {
-        fill: #aaa;
+        fill: @brand-primary;
     }
 
     .place-label {
-        font-size: 0.7em;
+        font-size: 0.9em;
+        font-weight: 300;
         fill: #333;
     }
 }
