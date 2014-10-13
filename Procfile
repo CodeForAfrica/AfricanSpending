@@ -1,1 +1,1 @@
-web: gunicorn africanspending.manage:app
+web: gunicorn --debug --log-file - africanspending.views:app

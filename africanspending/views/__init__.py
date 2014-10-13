@@ -14,6 +14,7 @@ def inject_globals():
     }
 
 
+@app.route('/')
 @app.route('/index.html')
 def index():
     return render_template('index.html')
