@@ -1,0 +1,82 @@
+budgit:
+  countries: ng
+  info_url: http://www.yourbudgit.com/
+  label: BudgIT
+  orgs: []
+  slug: budgit
+  subtype: ngo
+  summary: BudgIT is a creative start-up driven to retell the Nigerian budget and
+    public data in a finer detail across every literacy span.
+  tags:
+  - budget transparency
+  - project tracking
+  topics: []
+  type: organisation
+code4africa:
+  countries: ng, ke, za, gh
+  info_url: http://codeforafrica.org
+  label: Code for Africa
+  orgs: []
+  slug: code4africa
+  subtype: ngo
+  summary: A network of country-level initiatives that create demand-driven data solutions
+    for media and NGOs.
+  tags: []
+  topics: []
+  type: organisation
+tracka:
+  countries: ng
+  info_url: http://tracka.ng/
+  label: Tracka
+  orgs:
+  - budgit
+  slug: tracka
+  subtype: tool
+  summary: Tracka enables people to collaborate and track capital projects in their
+    community.
+  tags:
+  - project tracking
+  - monitoring
+  - spending
+  - engagement
+  topics:
+  - monitoring
+  type: project
+wb:
+  data_url: http://data.worldbank.org
+  info_url: http://worldbank.org
+  label: World Bank
+  orgs: []
+  slug: wb
+  subtype: gov
+  summary: An international finance institution that provides loans to developing
+    countries.
+  tags: []
+  topics: []
+  type: organisation
+wbi:
+  label: World Bank Institute
+  orgs: []
+  slug: wbi
+  subtype: gov
+  tags: []
+  topics: []
+  type: organisation
+where-my-money-dey:
+  countries: ng
+  info_url: http://wmmd.codeforafrica.org/
+  label: Where My Money Dey
+  orgs:
+  - code4africa
+  slug: where-my-money-dey
+  subtype: site
+  summary: Where My Money Dey? is a volunteer-built project designed to improve public
+    accountability and civic engagement through active citizenry.
+  tags:
+  - extractives
+  - interactive
+  - revenue
+  - engagement
+  topics:
+  - extractives
+  type: project

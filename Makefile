@@ -1,7 +1,8 @@
 
+all: cleanish maps library
+
 web:
 	python africanspending/manage.py runserver
-
 
 countries:
 	wget -O contrib/obs.json http://obstracker.internationalbudget.org/countries.json
@@ -41,7 +42,12 @@ maps: contrib/maps/admin0.zip contrib/maps/places.zip
 
 #maps: africanspending/static/maps/africa.json
 
-clean:
-	rm -rf contrib/maps
-	rm -f africanspending/static/maps/africa.json
+library:
+	python contrib/make_library.py
 
+cleanish:
+	rm -f africanspending/static/maps/africa.json
+	rm -f contrib/library.csv 
+
+clean: cleanish
+	rm -rf contrib/maps

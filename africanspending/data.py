@@ -2,6 +2,8 @@ import os
 import yaml
 from slugify import slugify
 
+from flask import url_for
+
 from africanspending.app import app
 
 
@@ -23,8 +25,23 @@ def lemma_by_slug(slug):
             return entry
 
 
-countries = read_yaml('library/countries')
-for key, country in countries.items():
-    country['slug'] = slugify(country.get('label'))
+def load_countries():
+    countries = read_yaml('library/countries')
+    for key, country in countries.items():
+        country['slug'] = slugify(country.get('label'))
+        country['path'] = url_for('country', slug=country['slug'])
+        country['key'] = key
+    return countries
 
 
+def load_library():
+    library = read_yaml('library/data')
+    for slug, item in library.items():
+        if item.get('type') == 'organisation':
+            item['path'] = url_for('organisation', slug=slug)
+    return library
+
+
+def load_topics():
+    topics = read_yaml('library/topics')
+    return topics
