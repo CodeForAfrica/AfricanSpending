@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for
 
 from africanspending.app import app
-from africanspending.views import glossary, page # noqa
+from africanspending.views import page # noqa
 from africanspending.views.library import country # noqa
 from africanspending.data import load_countries, load_library
 
