@@ -3,6 +3,7 @@ from flask import render_template, url_for
 
 from africanspending.app import app
 from africanspending.data import load_countries, load_library
+from africanspending.data import load_topics
 
 
 def sort_items(items):
@@ -26,7 +27,11 @@ def organisation(slug):
 
 @app.route('/library/topics/<slug>.html')
 def topic(slug):
-    return ''
+    topics = load_topics()
+    if slug not in topics:
+        raise NotFound()
+    topic = topics.get(slug)
+    return render_template('topic.html', topic=topic)
 
 
 @app.route('/library/countries/<slug>.html')
