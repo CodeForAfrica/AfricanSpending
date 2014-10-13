@@ -11,7 +11,12 @@ def sort_items(items):
 
 @app.route('/library/index.html')
 def library():
-    return render_template('library.html')
+    organisations = []
+    for item in load_library().values():
+        if item.get('type') == 'organisation':
+            organisations.append(item)
+    organisations = sorted(organisations, key=lambda o: o.get('label'))
+    return render_template('library.html', organisations=organisations)
 
 
 @app.route('/library/organisations/<slug>.html')

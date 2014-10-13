@@ -1,0 +1,16 @@
+aid:
+  label: Aid allocation
+  slug: aid
+  summary: Projects that help to understand the need for development aid and the types
+    of support already provided.
+extractives:
+  label: Extractive industries
+  slug: extractives
+  summary: Collecting and analyzing data about the ways in which governments raise
+    funds by allowing companies to extract minerals, precious stones and fossil fuels
+    from the ground.
+monitoring:
+  label: Project monitoring
+  slug: monitoring
+  summary: Monitoring the implementation of government- or aid-funded projects to
+    ensure that they are built, match the contract and serve a valid purpose.

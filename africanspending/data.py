@@ -44,4 +44,6 @@ def load_library():
 
 def load_topics():
     topics = read_yaml('library/topics')
+    for slug, topic in topics.items():
+        topic['path'] = url_for('topic', slug=slug)
     return topics

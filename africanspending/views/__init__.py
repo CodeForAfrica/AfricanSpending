@@ -1,16 +1,18 @@
-from flask import render_template, redirect, url_for
+from flask import render_template
 
 from africanspending.app import app
 from africanspending.views import page # noqa
 from africanspending.views.library import country # noqa
 from africanspending.data import load_countries, load_library
+from africanspending.data import load_topics
 
 
 @app.context_processor
 def inject_globals():
     return {
         'countries': load_countries(),
-        'library': load_library()
+        'library': load_library(),
+        'topics': load_topics()
     }
 
 

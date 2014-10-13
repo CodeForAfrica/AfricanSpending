@@ -1,19 +1,21 @@
 {% macro render_item(item) %}
-    <div class="col-md-4 col-sm-6 col-xs-12">
-        <h3>{{item.label}}</h3>
-        <p>{{item.summary}}</p>
-    </div>
+    <h4>{{item.label}}</h4>
+    <p>{{item.summary}}</p>
 {% endmacro %}
 
 {% macro render_items(items) %}
     <div class="visible-xs-block row">
         {% for item in items %}
-            {{ render_item(item) }}
+            <div class="col-xs-12">
+                {{ render_item(item) }}
+            </div>
         {% endfor %}
     </div>
     <div class="visible-sm-block row">
         {% for item in items %}
-            {{ render_item(item) }}
+            <div class="col-sm-6">
+                {{ render_item(item) }}
+            </div>
             {% if loop.index % 2 == 0 %}
                 </div>
                 <div class="visible-sm-block row">
@@ -22,7 +24,9 @@
     </div>
     <div class="visible-md-block visible-lg-block row">
         {% for item in items %}
-            {{ render_item(item) }}
+            <div class="col-md-4">
+                {{ render_item(item) }}
+            </div>
             {% if loop.index % 3 == 0 %}
                 </div>
                 <div class="visible-md-block visible-lg-block row">

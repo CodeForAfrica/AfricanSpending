@@ -65,7 +65,7 @@ wbi:
 where-my-money-dey:
   countries: ng
   info_url: http://wmmd.codeforafrica.org/
-  label: Where My Money Dey
+  label: Where My Money Dey?
   orgs:
   - code4africa
   slug: where-my-money-dey
