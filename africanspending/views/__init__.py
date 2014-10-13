@@ -14,7 +14,7 @@ def inject_globals():
     }
 
 
-@app.route('/')
+@app.route('/index.html')
 def index():
     return render_template('index.html')
 
@@ -23,8 +23,3 @@ def index():
 def root_txt(file_name):
     # used for robots.txt, humans.txt
     return app.send_static_file('%s.txt' % file_name)
-
-
-@app.route('/library')
-def library_index():
-    return redirect(url_for('country_index'))
