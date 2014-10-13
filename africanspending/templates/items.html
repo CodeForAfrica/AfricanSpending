@@ -1,0 +1,32 @@
+{% macro render_item(item) %}
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <h3>{{item.label}}</h3>
+        <p>{{item.summary}}</p>
+    </div>
+{% endmacro %}
+
+{% macro render_items(items) %}
+    <div class="visible-xs-block row">
+        {% for item in items %}
+            {{ render_item(item) }}
+        {% endfor %}
+    </div>
+    <div class="visible-sm-block row">
+        {% for item in items %}
+            {{ render_item(item) }}
+            {% if loop.index % 2 == 0 %}
+                </div>
+                <div class="visible-sm-block row">
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="visible-md-block visible-lg-block row">
+        {% for item in items %}
+            {{ render_item(item) }}
+            {% if loop.index % 3 == 0 %}
+                </div>
+                <div class="visible-md-block visible-lg-block row">
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endmacro %}
