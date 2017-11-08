@@ -2,6 +2,7 @@ _site/
 
 build
 dist
+node_modules
 
 .env
 *.pyc
