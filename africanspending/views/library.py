@@ -13,7 +13,7 @@ def sort_items(items):
 @app.route('/library/index.html')
 def library():
     organisations = []
-    for item in load_library().values():
+    for item in list(load_library().values()):
         if item.get('type') == 'organisation':
             organisations.append(item)
     organisations = sorted(organisations, key=lambda o: o.get('label'))
@@ -36,10 +36,10 @@ def topic(slug):
 
 @app.route('/library/countries/<slug>.html')
 def country(slug):
-    for k, country in load_countries().items():
+    for k, country in list(load_countries().items()):
         if country['slug'] == slug:
             library_items = []
-            for slug, item in load_library().items():
+            for slug, item in list(load_library().items()):
                 if k in item.get('countries', []):
                     library_items.append(item)
             return render_template('country.html',

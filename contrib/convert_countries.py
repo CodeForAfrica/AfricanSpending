@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import yaml, json
 import unicodecsv
@@ -12,9 +13,9 @@ COUNTRIES = ['za', 'dz', 'ao', 'bw', 'bf', 'bi',
              'zm', 'zw', 'gq', 'ss', 'bj', 'cv', 'mr',
              'mu', 'rw', 'st', 'sc', 'eh', 'tg']
 
-print len(set(COUNTRIES))
+print(len(set(COUNTRIES)))
 
-print map(lambda c: c.upper(), COUNTRIES)
+print([c.upper() for c in COUNTRIES])
 
 my_path = os.path.dirname(__file__)
 
@@ -22,8 +23,8 @@ out_file = os.path.join(my_path, '../data/library/countries.yaml')
 
 try:
     out = yaml.load(open(out_file, 'rb').read())
-except Exception, e:
-    print e
+except Exception as e:
+    print(e)
     out = {}
 
 with open(os.path.join(my_path, 'countries.csv'), 'r') as fh:
@@ -41,7 +42,7 @@ with open(os.path.join(my_path, 'countries.csv'), 'r') as fh:
             'label': row.get('country')
         }
         od = out.get(key, {})
-        for k, v in data.items():
+        for k, v in list(data.items()):
             if k not in od:
                 od[k] = v
         out[key] = od
@@ -57,9 +58,9 @@ for cd in json.load(open(os.path.join(my_path, 'obs.json'), 'rb')):
     out[key]['obi_url'] = 'http://survey.internationalbudget.org/#profile/%s' % cd.get('code')
 
 
-print sorted(map(lambda o: o.get('iso3'), out.values()))
+print(sorted([o.get('iso3') for o in list(out.values())]))
 
-print 'missing', set(COUNTRIES) - set(out.keys())
+print('missing', set(COUNTRIES) - set(out.keys()))
 
 
 with open(out_file, 'wb') as fd:

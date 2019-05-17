@@ -11,7 +11,7 @@ from africanspending.data import load_topics
 def inject_globals():
     countries = load_countries()
     map_links = {}
-    for k, v in countries.items():
+    for k, v in list(countries.items()):
         map_links[v.get('iso3')] = v.get('path')
     return {
         'countries': countries,

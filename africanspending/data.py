@@ -27,7 +27,7 @@ def lemma_by_slug(slug):
 
 def load_countries():
     countries = read_yaml('library/countries')
-    for key, country in countries.items():
+    for key, country in list(countries.items()):
         country['slug'] = slugify(country.get('label'))
         country['path'] = url_for('country', slug=country['slug'])
         country['key'] = key
@@ -36,7 +36,7 @@ def load_countries():
 
 def load_library():
     library = read_yaml('library/data')
-    for slug, item in library.items():
+    for slug, item in list(library.items()):
         if item.get('type') == 'organisation':
             item['path'] = url_for('organisation', slug=slug)
     return library
@@ -44,6 +44,6 @@ def load_library():
 
 def load_topics():
     topics = read_yaml('library/topics')
-    for slug, topic in topics.items():
+    for slug, topic in list(topics.items()):
         topic['path'] = url_for('topic', slug=slug)
     return topics
